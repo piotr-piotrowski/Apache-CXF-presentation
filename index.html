@@ -54,12 +54,13 @@
 					<h2>Agenda</h2>
 					<ol>
 						<li>History</li>
-						<li>Why <a href="https://cxf.apache.org/">Apache CXF</a></li>
+						<li>Why <a href="https://cxf.apache.org/">Apache CXF</a>?</li>
 						<li>Minimal example</li>
 						<li>Architecture</li>
 						<li>Code-first example</li>
 						<li>Contract-first example</li>
 						<li>Rest example</li>
+						<li>JavaScript example</li>
 						<li>Summary & Question</li>
 					</ol>
 				</section>
@@ -70,7 +71,7 @@
 				</section>
 
 				<section>
-					<h2>Why <a href="https://cxf.apache.org/">Apache CXF</a></h2>
+					<h2>Why <a href="https://cxf.apache.org/">Apache CXF</a>?</h2>
 					<ul>
 						<li class="fragment">most widely used</li>
 						<li class="fragment">support for web service standards</li>
@@ -92,20 +93,78 @@
 				</section>
 
 				<section>
-					<h2>Architecture</h2>
-					<ul>
-						<li>Bus</li>
-						<li>Frontend</li>
-						<li>Messaging and Interceptors</li>
-						<li>Service Model</li>
-						<li>Data bindings</li>
-						<li>Protocol bindings</li>
-						<li>Transport</li>
-					</ul>
+					<section>
+						<h2>Architecture</h2>
+						<p><img src="https://cxf.apache.org/docs/cxf-architecture.thumbs/cxf_architecture.png" width="600" height="300"></p>
+						<ul>
+							<li>Bus</li>
+							<li>Frontend</li>
+							<li>Messaging and Interceptors</li>
+							<li>Service Model</li>
+							<li>Data bindings</li>
+							<li>Protocol bindings</li>
+							<li>Transport</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Bus</h2>
+						<ul>
+							<li class="fragment">Bus is backbone of CXF architecture</li>
+							<li class="fragment">Bus is Spring bean and can be overridden</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Frontend</h2>
+						<ul>
+							<li><a href="https://jax-ws.java.net/">JAX-WS</a></li>
+							<li>Simple Factory Bean</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Messaging and Interceptors</h2>
+					</section>
+					<section>
+						<h2>Service Model</h2>
+						<ul>
+							<li class="fragment">is the representation of a service within CXF</li>
+							<li class="fragment">is used by frontend to create web services</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Data bindings</h2>
+						<ul>
+							<li class="fragment">is the key for any webservice development</li>
+							<li class="fragment">is mapping between Java objects and XML elements</li>
+							<li class="fragment">JAXB & Aegis</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Protocol bindings</h2>
+						<ul>
+							<li>SOAP 1.1</li>
+							<li>SOAP 1.2</li>
+							<li>CORBA</li>
+							<li>Pure XML</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Transport</h2>
+						<ul>
+							<li>HTTP</li>
+							<li>CORBA</li>
+							<li>JMS</li>
+							<li>Local</li>
+						</ul>
+					</section>
 				</section>
 
 				<section>
 					<h2>Code-first example</h2>
+					<ul>
+						<li>Creating Service Endpoint Interface</li>
+						<li>Add Java annotations</li>
+						<li>Publishing</li>
+					</ul>
 				</section>
 
 				<section>
@@ -117,11 +176,17 @@
 				</section>
 
 				<section>
+					<h2>JavaScript example</h2>
+				</section>
+
+				<section>
 					<h2>Summary & question</h2>
 				</section>
 
 				<section>
-					<h1>THE END</h1>
+					<h1>Thank you!!!</h1>
+					<h1>and</h1>
+					<h1>happy Xmas!!!</h1>
 				</section>
 
 			</div>
